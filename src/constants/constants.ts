@@ -2,28 +2,28 @@ import { Tab } from "../types/tabTypes";
 
 export const ROUTES = {
   HOME: "/",
-  TEST_CASE: "/test-case",
-  TEST_CASE_1: "/test-case/1",
-  TEST_CASE_2: "/test-case/2",
-  TEST_CASE_3: "/test-case/3",
-  TEST_CASE_4: "/test-case/4",
+  FLOOR: "/floor",
+  FIRST_FLOOR: "/floor/1",
+  SECOND_FLOOR: "/floor/2",
+  THIRD_FLOOR: "/floor/3",
+  FOURTH_FLOOR: "/floor/4",
 };
 
 export const availableTabs: Tab[] = [
   {
-    link: ROUTES.TEST_CASE_1,
-    label: "Test Case 1",
+    link: ROUTES.FIRST_FLOOR,
+    label: "First Floor",
   },
   {
-    link: ROUTES.TEST_CASE_2,
-    label: "Test Case 2",
+    link: ROUTES.SECOND_FLOOR,
+    label: "Second Floor",
   },
   {
-    link: ROUTES.TEST_CASE_3,
-    label: "Test Case 3",
+    link: ROUTES.THIRD_FLOOR,
+    label: "Third Floor",
   },
   {
-    link: ROUTES.TEST_CASE_4,
-    label: "Test Case 4",
+    link: ROUTES.FOURTH_FLOOR,
+    label: "Fourth Floor",
   },
 ];

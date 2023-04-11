@@ -16,15 +16,8 @@ export const clientsSlice = apiSlice.injectEndpoints({
 
 export const domainSelectClients = clientsSlice.endpoints.getClients.select();
 
-export const selectClients = createSelector(
-  domainSelectClients,
-  ({ isError, isLoading, error, data, isSuccess }) => ({
-    isError,
-    isLoading,
-    error,
-    isSuccess,
-    clients: transformClientList(data),
-  })
+export const selectClients = createSelector(domainSelectClients, ({ data }) =>
+  transformClientList(data)
 );
 
 export const { useGetClientsQuery } = clientsSlice;

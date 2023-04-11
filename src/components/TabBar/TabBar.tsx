@@ -5,9 +5,9 @@ const TabBar: FC<TabBarProps> = ({ currentLocation, tabs, onTabClicked }) => {
   const isSelected = (tab: Tab) => tab.link === currentLocation;
   const renderTab = (tab: Tab) => {
     const selectedStyle =
-      "text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500";
+      "text-white py-4 px-6 block hover:text-white focus:outline-none text-white border-b-2 font-medium border-white";
     const defaultStyle =
-      "text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none";
+      "text-white py-4 px-6 block hover:text-white focus:outline-none";
 
     const handleTabClick = (tabLink: string) => onTabClicked(tabLink);
 
@@ -23,7 +23,7 @@ const TabBar: FC<TabBarProps> = ({ currentLocation, tabs, onTabClicked }) => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       <nav className="flex flex-col sm:flex-row">
         {tabs.map((tab) => renderTab(tab))}
       </nav>
