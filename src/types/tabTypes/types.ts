@@ -6,5 +6,4 @@ export interface Tab {
 export type TabBarProps = {
   currentLocation: string;
   tabs: Tab[];
-  onTabClicked: (link: string) => void;
 };
