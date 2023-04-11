@@ -27,3 +27,5 @@ export const availableTabs: Tab[] = [
     label: "Fourth Floor",
   },
 ];
+
+export const serviceURL = "https://gist.github.com/";

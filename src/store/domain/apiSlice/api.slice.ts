@@ -1,6 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
-const serviceURL = "https://gist.github.com/";
+import { serviceURL } from "../../../constants/constants";
 
 export const ROOT = "root";
 
